@@ -542,10 +542,10 @@ class IncomingRequest extends IncomingMessage {
     dynamic to = getHeader('To');
 
     reason = reason ?? null;
-
     // Validate code and reason values.
     if (code < 100 || code > 699) {
       throw Exceptions.TypeError('Invalid status_code: $code');
+      
     } else if (reason != null) {
       throw Exceptions.TypeError('Invalid reason_phrase: $reason');
     }

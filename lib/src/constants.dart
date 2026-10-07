@@ -103,7 +103,6 @@ enum SipMethod {
   MESSAGE,
   NOTIFY,
   OPTIONS,
-  PUBLISH,
   REGISTER,
   REFER,
   UPDATE,
@@ -196,7 +195,7 @@ Map<int, String> REASON_PHRASE = <int, String>{
   493: 'Undecipherable',
   494: 'Security Agreement Required', // RFC 3329
   500: 'DartSIP Internal Error',
-  501: 'Not Implemented',
+  501: 'Not Implemented', 
   502: 'Bad Gateway',
   503: 'Service Unavailable',
   504: 'Server Time-out',
@@ -210,7 +209,7 @@ Map<int, String> REASON_PHRASE = <int, String>{
 };
 
 const String ALLOWED_METHODS =
-    'INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY,PUBLISH';
+    'INVITE,ACK,CANCEL,BYE,UPDATE,MESSAGE,OPTIONS,REFER,INFO,NOTIFY';
 const String ACCEPTED_BODY_TYPES = 'application/sdp, application/dtmf-relay';
 const int MAX_FORWARDS = 69;
 const int SESSION_EXPIRES = 90;
